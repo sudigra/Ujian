@@ -233,7 +233,7 @@ function renderQuestionByIndex(index) {
     .join(",");
 
   const uri = `${API_URL}?aksi=selesai&username=${encodeURIComponent(user.user)}&mapel=${encodeURIComponent(mapel)}&jwb=${encodeURIComponent(jwbString)}`;
-console.log(uri);
+
   showLoading();
       fetch(uri)
         .then(res => res.json())
