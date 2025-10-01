@@ -1,0 +1,73 @@
+<style>
+
+</style>
+
+<div id='t-ujian'>
+	Selamat datang <span class='user-nama'>Surya Adi Nugraha</span>.
+	Berikut adalah daftar ujian untuk kamu kerjakan.
+
+	<div class='card bg-info m-3'>
+		<div class='card-body'>
+			<h3>Ujian mata pelajaran Matematika</h3>
+			<p> Jumlah soal 40 pilihan ganda dan 5 uraian<br>
+				Waktu pengerjaan 90 Menit.<br>
+				Status : Belum Dikerjakan
+			</p>
+		</div>
+	</div>
+	<div class='card bg-success text-light m-3'>
+		<div class='card-body'>
+			<h3>Ujian mata pelajaran Bahasa Indonesia</h3>
+			<p> Jumlah soal 45 pilihan ganda dan 5 uraian<br>
+				Waktu pengerjaan 90 Menit.<br>
+				Status : Selesai Dikerjakan
+			</p>
+		</div>
+	</div>
+</div>
+<div id='t-soal'>
+	<div class='row'>
+		<div class='col-sm-8 card'>
+			<div class='card-body'>
+				<div class='soal' id='e-soal' no-soal='1'>
+					<h1>1. Apa yang dimaksud dengan hardware?</h1></div>
+				<div class='soal'>
+					<div class="option-group">
+						<label class="option d-none" id='opsia'>
+							<input type="radio" name="jawaban" value="A">
+							<span class="letter">A</span>
+							<span class="text" id='e-opsia'>Jawaban A</span>
+						</label>
+
+						<label class="option d-none" id='opsib'>
+							<input type="radio" name="jawaban" value="B">
+							<span class="letter">B</span>
+							<span class="text" id='e-opsib'>Jawaban B</span>
+						</label>
+
+						<label class="option d-none" id='opsic'>
+							<input type="radio" name="jawaban" value="C">
+							<span class="letter">C</span>
+							<span class="text" id='e-opsic'>Jawaban C</span>
+						</label>
+
+						<label class="option d-none" id='opsid' onclick="jaWab('d')">
+							<input type="radio" name="jawaban" value="D">
+							<span class="letter">D</span>
+							<span class="text" id='e-opsid'>Jawaban D</span>
+						</label>
+						<label class="option d-none" id='opsie'>
+							<input type="radio" name="jawaban" value="E">
+							<span class="letter">E</span>
+							<span class="text"id='e-opsie'>Jawaban E</span>
+						</label>
+					</div>
+					<button class='btn btn-primary mt-2 float-end' id='btnSelesai'>Selesai</button>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-3' id="e-dasoal">
+			<button class='no-soal btn px-3 py-2 m-1'>1<span class='jwb'>A</span></button><button class='no-soal btn px-3 py-2 m-1'>10<span class='jwb'>A</span></button><button class='no-soal btn px-3 py-2 m-1'>20<span class='jwb'>A</span></button>
+		</div>
+	</div>
+</div>
