@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduXam</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="bg-info p-3">
+			<div class="row">
+				<div class='col-sm-4 text-end'>
+					<img class='' id="app-logo" src="logo.png" height="100"/>
+				</div>
+				<div class='col-sm-8'>
+					<h1 id='app-title'>Aplikasi EduXam by Sudigra</h1>
+					<p id='app-description'>Aplikasi Ujian tanpa database dan hanya bekerja di browsermu</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Navbar jika user berhasil login -->
+	<nav class="navbar navbar-light bg-light px-3 d-none" id="nav-menu">
+		<a class="navbar-brand user-nama" href="#">Surya Adi Nugraha</a>
+		<button id="btnLogout" class="btn text-light btn-danger btn-sm">Keluar</button>
+	</nav> 
+  <!-- Konten dinamis -->
+	<div id="app" class="container-fluid mt-4">
+		<h3>Ghifary Arkana Alshabur Rasyid</h3>
+		<p>Silakan pilih menu di atas.</p>
+	</div>
+	
+	<!-- Loading Overlay -->
+	<div id="loadingOverlay" class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-white" style="z-index:1050;">
+		<div class="spinner-border text-primary" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+	
+
+</body>
+</html>
